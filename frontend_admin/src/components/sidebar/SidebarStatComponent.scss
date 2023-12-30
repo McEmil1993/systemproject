@@ -1,0 +1,36 @@
+.sidestat {
+    padding: 5px;
+    font-size: 11px;
+    margin-bottom: 20px;
+
+    &__group {
+        display: grid;
+        grid-template-columns: auto auto;
+        color: $dark-text-color;
+        margin-bottom: 5px;
+
+        &__label {
+            
+        }
+        &__value {
+            text-align: right;
+        }
+    }
+
+    &__space {
+        height: 20px;
+    }
+    &__show {
+        button {
+            width: 100%;
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 10px;
+            box-shadow: none;
+            cursor: pointer;
+        }
+    }
+}

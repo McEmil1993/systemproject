@@ -1,0 +1,64 @@
+
+.main {
+    min-height: inherit;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    &__header {
+        background-color: #fafafa;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 40px;
+        padding: 8px 30px;
+        height: 90px;
+        
+        &__count {
+
+        }
+
+        &__summmary {
+
+        }
+
+        &__actions {
+
+        }
+    }
+    &__sidebar {
+        width: 200px;
+        color: #fff;
+        height: 100vh;   
+        background-color: $sidebar-background-color;
+
+        &__logo {     
+            height: 40px;
+            margin: 18px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        &__divider {
+            height: 1px;
+            background-color: #fff;
+            opacity: 0.1;
+        }
+
+        &__title {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        &.en {
+            width: 230px;
+        }
+ 
+    }
+    &__content {
+        
+    }
+}

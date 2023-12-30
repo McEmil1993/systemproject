@@ -1,0 +1,25 @@
+.g-card {
+    
+    margin: 30px;
+
+    &__title {
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+        color: $gcard-text-title-color;
+
+        .icon {
+            font-size: 27px;
+        }
+        .label {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+    }
+    &__content {
+        background-color: $gcard-bg;
+        padding: 20px;
+        border-top: 3px solid $gcard-lining;
+        border-radius: 3px;
+    }
+}

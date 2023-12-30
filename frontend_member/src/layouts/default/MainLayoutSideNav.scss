@@ -1,0 +1,52 @@
+.sidebar {
+    &__group {
+        display: grid;
+        grid-gap: 10px;
+        align-items: center;
+        grid-template-columns: auto 1fr auto;
+        background-color: #24262b;
+        cursor: pointer;
+        padding: 0 15px;
+        margin: 0 12px;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        color: #98a7b5;
+        height: 45px;
+        
+
+        .icon {
+            &__default {
+                display: block;
+            }
+            &__hover {
+                display: none;
+            }
+        }
+        .label {
+            
+        }
+        .more {
+            img {
+                margin-top: 3px;
+            }
+        }
+
+        &:hover {
+            background-color: #2e3137;
+            color: #fff;
+            
+            .icon {
+                &__default {
+                    display: none;
+                }
+                &__hover {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__spacing {
+        height: 10px;
+        width: 100%;
+    }
+}

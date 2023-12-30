@@ -1,0 +1,30 @@
+.header-summary {
+    width: 500px;
+    margin: 3px;
+    
+    table {
+        border-collapse: collapse;
+        text-align: center;
+
+        thead {
+   
+            tr {
+                
+                th {
+                    border: 1px solid #dfdfdf;
+                    color: #444;
+                    padding: 5px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    border: 1px solid #dfdfdf;
+                    padding: 10px;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        max-width: 300px;
+        width: 100%;
+
+        .nav-group {
+            grid-template-columns: auto 1fr;
+            display: grid;
+            color: #98a7b5;
+            cursor: pointer;
+            
+
+            .icon {
+                width: 50px;
+                text-align: center;
+
+                img {
+                    &.default {
+                        display: inline-block;
+                    }
+                    &.hover {
+                        display: none;
+                    }
+                }
+            }
+            &__label {
+                font-size: 16px;
+            }
+
+            &:hover {
+                color: #fff;
+
+                .icon {
+                   
+                    img {
+                        &.default {
+                            display: none;
+                        }
+                        &.hover {
+                            display: inline-block;
+                        }                
+                    }
+                }
+            }
+        }
+    }
+    &__right {
+        display: flex;
+
+        .action {
+            display: flex;
+            padding: 7px 20px;
+            margin: 10px 3px;
+            background-color: transparent;
+            align-items: center;
+            border-radius: 3px;
+            justify-content: right;
+            gap: 5px;
+            cursor: pointer;
+
+
+            &.yellow {
+                background: conic-gradient(from 1turn,#ffe400,#fff311);
+                color: #000;
+            }
+            &.active {
+                background-color: #3A3C41;
+                padding: 7px 10px;
+            }
+
+            .icon {
+                &__default {
+                    display: block;
+                }
+                &__hover {
+                    display: none;
+                }
+            }
+
+            &:last-child {
+                margin-right: 20px;
+            }
+
+            &:hover {
+                background-color: #3A3C41;
+
+                .icon {
+                    &__default {
+                        display: none;
+                    }
+                    &__hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

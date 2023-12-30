@@ -1,0 +1,97 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
+
+// app global css in SCSS form
+body {
+    font-family: "Roboto", "Noto Sans KR", "sans-serif";
+    font-size: 12px;
+    background-color: #eee;
+}
+
+.default-page {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+}
+
+.filters {
+    select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        &:focus {
+            outline: none;
+            border: 1px solid #333;
+        }
+    }
+    input {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 4px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #333;
+        }
+    }
+    button {
+        border-radius: 3px;
+        border: none;
+        padding: 5px 15px;
+        background-color: red;
+        color: #fff;
+        cursor: pointer;
+
+    }
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+
+    thead {
+        
+        tr {
+            th {
+                background-color: rgb(240, 240, 240);
+                border: 1px solid rgb(223,223,223);
+                padding: 6px;
+                vertical-align: middle;
+            }
+        }
+    }
+    tbody {
+        tr {
+            &:hover {
+                background-color: #fafafa;
+                cursor: default;
+            }
+
+            td {
+                border: 1px solid rgb(223,223,223);
+                padding: 5px;
+                vertical-align: middle;
+                color: #333;
+
+                .clickable {
+                    padding: 5px;
+                    cursor: pointer;
+                    user-select: none;
+
+                    &:hover {
+                        background-color: #eee;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    tr {
+        .check-select {
+            text-align: center;
+        }
+    }
+}
